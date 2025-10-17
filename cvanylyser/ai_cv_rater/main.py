@@ -10,11 +10,11 @@ import time # Pievienots atpakaļ, lai izvairītos no ātruma ierobežojumiem
 
 # UZMANĪBU: Nomainiet 'JŪSU_ATSLĒGA_ŠEIT' ar savu faktisko Gemini API atslēgu.
 # Šis ir pagaidu risinājums, ja vides mainīgais GEMINI_API_KEY netiek atrasts.
-MY_API_KEY = "AIzaSyDOYgNp9YLdSxODqtces3P2DADTpk3ce5A" 
+MY_API_KEY =  
 
-if MY_API_KEY == "AIzaSyDOYgNp9YLdSxODqtces3P2DADTpk3ce5A" or not MY_API_KEY:
+if MY_API_KEY ==  or not MY_API_KEY:
     # Ja atslēga joprojām nav ievietota tieši, mēģinām to nolasīt no vides mainīgā
-    GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "AIzaSyDOYgNp9YLdSxODqtces3P2DADTpk3ce5A")
+    GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", ")
     if not GEMINI_API_KEY:
         raise RuntimeError("Lūdzu, ievietojiet savu API atslēgu tieši Python kodā (main.py) vai iestatiet vides mainīgo GEMINI_API_KEY.")
     MY_API_KEY = GEMINI_API_KEY # Izmantojam atrasto atslēgu
@@ -232,4 +232,5 @@ def main():
         time.sleep(1) # Atstājam pauzi starp API zvaniem, lai izvairītos no ātruma ierobežojumiem
 
 if __name__ == '__main__':
+
     main()
